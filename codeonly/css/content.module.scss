@@ -1,0 +1,469 @@
+@use "../utils" as *;
+@use "../global" as *;
+
+.contentSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  margin: 4px auto 85px;
+  width: 90.42%;
+  max-width: 1302.046875px;
+  @include md {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+  @include xs {
+    margin: 4px auto 80px;
+  }
+  @include tn {
+    margin: 4px auto 50px;
+  }
+}
+.flexColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 13px 0px;
+  width: 626px;
+  min-width: 0px;
+  @include md {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 42px 0px;
+}
+.heroTitle {
+  position: relative;
+  min-width: 0px;
+  font: 700 64px/1.2 "Inter", Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: -1.28px;
+  @include md {
+    align-items: flex-start;
+    font-size: 52px;
+  }
+  @include xxs {
+    font-size: 36px;
+  }
+}
+.subtitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0px 2px 0px 0px;
+  min-width: 0px;
+  font: 400 24px/1.5 "Inter", Helvetica, Arial, serif;
+  color: rgb(130, 130, 130);
+  @include md {
+    font-size: 22px;
+  }
+  @include xxs {
+    font-size: 20px;
+  }
+}
+.flexCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 138px;
+  @include xs {
+    margin: 0px 0px 80px;
+  }
+  @include tn {
+    margin: 0px 0px 50px;
+  }
+}
+.formGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  @include xs {
+    margin: 0px 0px 80px;
+  }
+  @include tn {
+    margin: 0px 0px 50px;
+  }
+}
+.flexCol1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.flexRowFullname {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  margin: 0px 2px 0px 0px;
+  @include xxs {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+.flexColName {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0px;
+  width: 295px;
+  min-width: 0px;
+  @include xxs {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.highlight {
+  position: relative;
+  min-width: 0px;
+  font: 500 16px/1.5 "Inter", Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+}
+.btnNameBoxBox {
+  width: 100%;
+  font: 500 16px/1.5 "Inter", Helvetica, Arial, serif;
+  color: rgb(130, 130, 130);
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  vertical-align: top;
+}
+.btnNameBoxBox:focus {
+  outline: none;
+}
+.btnNameBoxBox_box {
+  position: relative;
+  min-width: 0px;
+  border-radius: 8px 8px 8px 8px;
+  padding: 12px 8px 12px 8px;
+  outline: 1px solid rgb(224, 224, 224);
+  outline-offset: -1px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.047);
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+  @include tn {
+    margin: 0px 0px 0px 8px;
+  }
+}
+.btnNameBoxBox_box:hover {
+  box-shadow: inset 0 0 0 4px #2685ff, 0 0 1px rgb(0 0 0 / 0%);
+}
+.flexColSurname {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0px;
+  width: 297px;
+  min-width: 0px;
+  @include xxs {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.btnSurnameBoxBox {
+  width: 100%;
+  font: 500 16px/1.5 "Inter", Helvetica, Arial, serif;
+  color: rgb(130, 130, 130);
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  vertical-align: top;
+}
+.btnSurnameBoxBox:focus {
+  outline: none;
+}
+.btnSurnameBoxBox_box {
+  position: relative;
+  min-width: 0px;
+  border-radius: 8px 8px 8px 8px;
+  padding: 12px 8px 12px 8px;
+  outline: 1px solid rgb(224, 224, 224);
+  outline-offset: -1px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.047);
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+  @include tn {
+    margin: 0px 0px 0px 8px;
+  }
+}
+.btnSurnameBoxBox_box:hover {
+  box-shadow: inset 0 0 0 4px #2685ff, 0 0 1px rgb(0 0 0 / 0%);
+}
+.flexColEmail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0px;
+  margin: 24px 0px 0px;
+}
+.btnEmailBoxBox {
+  width: 100%;
+  font: 500 16px/1.5 "Inter", Helvetica, Arial, serif;
+  color: rgb(130, 130, 130);
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  vertical-align: top;
+}
+.btnEmailBoxBox:focus {
+  outline: none;
+}
+.btnEmailBoxBox_box {
+  position: relative;
+  min-width: 0px;
+  border-radius: 8px 8px 8px 8px;
+  padding: 12px 8px 12px 8px;
+  outline: 1px solid rgb(224, 224, 224);
+  outline-offset: -1px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.047);
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+  @include tn {
+    margin: 0px 0px 0px 8px;
+  }
+}
+.btnEmailBoxBox_box:hover {
+  box-shadow: inset 0 0 0 4px #2685ff, 0 0 1px rgb(0 0 0 / 0%);
+}
+.flexColHelpCategory {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0px;
+  margin: 24px 0px 0px;
+}
+.btnHelpCategory {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px 8px 8px 8px;
+  padding: 8px 16px 8px 16px;
+  outline: 1px solid rgb(224, 224, 224);
+  outline-offset: -1px;
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+}
+.btnHelpCategory:hover {
+  box-shadow: inset 0 0 0 4px #2685ff, 0 0 1px rgb(0 0 0 / 0%);
+}
+.btnText {
+  position: relative;
+  min-width: 0px;
+  font: 700 16px/1.5 "Inter", Helvetica, Arial, serif;
+  color: rgb(130, 130, 130);
+}
+.btnIcon {
+  position: relative;
+  width: 24px;
+  min-width: 0px;
+  height: 24px;
+}
+.antDesignSelect {
+  position: relative;
+  min-height: 40px;
+  padding: 8px 16px 8px 16px;
+  @include tn {
+    padding: 8px 8px 8px 8px;
+  }
+}
+.flexColProblemType {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0px;
+  margin: 32px 0px 0px;
+  width: 326px;
+  max-width: 85%;
+}
+.btnProblemType {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px 8px 8px 8px;
+  padding: 8px 16px 8px 16px;
+  outline: 1px solid rgb(224, 224, 224);
+  outline-offset: -1px;
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+}
+.btnProblemType:hover {
+  box-shadow: inset 0 0 0 4px #2685ff, 0 0 1px rgb(0 0 0 / 0%);
+}
+.flexColDescription {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 13px 0px;
+  margin: 32px 0px 0px;
+  padding: 0px;
+}
+.btnDescriptionBoxBox {
+  width: 100%;
+  font: 500 16px/1.5 "Inter", Helvetica, Arial, serif;
+  color: rgb(130, 130, 130);
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  vertical-align: top;
+  word-break: normal;
+}
+.btnDescriptionBoxBox:focus {
+  outline: none;
+}
+.btnDescriptionBoxBox_box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 8px 8px 8px 8px;
+  padding: 20px 8px 20px 8px;
+  outline: 1px solid rgb(224, 224, 224);
+  outline-offset: -1px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.047);
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+  @include md {
+    margin: 0px 0px 150px;
+  }
+  @include xs {
+    margin: 0px 0px 80px;
+  }
+  @include tn {
+    margin: 0px 0px 50px 8px;
+  }
+}
+.btnDescriptionBoxBox_box:hover {
+  box-shadow: inset 0 0 0 4px #2685ff, 0 0 1px rgb(0 0 0 / 0%);
+}
+.antDesignTextArea {
+  position: relative;
+  min-height: 192px;
+  font: 500 16px/1.5 Inter, Helvetica, Arial, serif;
+  color: rgb(130, 130, 130);
+  padding: 20px 8px 20px 8px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.047);
+  @include md {
+    margin: 0px 0px 150px;
+  }
+  @include xs {
+    margin: 0px 0px 80px;
+  }
+  @include tn {
+    margin: 0px 0px 50px 8px;
+  }
+}
+.htmlTextarea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0px;
+  height: auto;
+  min-height: 192px;
+  font: 500 16px/1.5 Inter, Helvetica, Arial, serif;
+  color: rgb(130, 130, 130);
+  background-color: transparent;
+  border: 0px;
+  padding: 20px 8px 20px 8px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.047);
+  @include md {
+    margin: 0px 0px 150px;
+  }
+  @include xs {
+    margin: 0px 0px 80px;
+  }
+  @include tn {
+    margin: 0px 0px 50px 8px;
+  }
+}
+.btnAttachment {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px 9px;
+  width: 180px;
+  max-width: 100%;
+  background-color: rgb(238, 238, 238);
+  border-radius: 8px 8px 8px 8px;
+  padding: 4px 5px 4px 6px;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+}
+.btnAttachment:hover {
+  background-color: #9da3abff;
+}
+.btnTextAttachment {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 1px 0px;
+  min-width: 0px;
+  font: 500 16px/1.5 "Inter", Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+}
+.btnIconAttachment {
+  position: relative;
+  width: 25px;
+  min-width: 0px;
+  height: 26px;
+}
+.btnSend {
+  position: absolute;
+  bottom: -127px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 626px;
+  height: 62px;
+  font: 500 20px/1.5 "Inter", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px 8px 8px 8px;
+  padding: 16px 8px 16px 8px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.047);
+  transform: translate(-50%, 0);
+  transition-duration: 0.3s;
+  transition-property: background-color;
+}
+.btnSend:hover {
+  background-color: #2685ff;
+}
+.supportLogo {
+  position: relative;
+  margin: 117px 0px 518px;
+  width: 581px;
+  min-width: 0px;
+  object-position: 260% center;
+  @include md {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+    max-width: 581px;
+  }
+}
